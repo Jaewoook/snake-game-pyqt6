@@ -3,7 +3,7 @@ from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 
 
-class Game(QWidget):
+class SnakeGame(QWidget):
 
     def __init__(self):
         super().__init__()
@@ -11,9 +11,8 @@ class Game(QWidget):
         self.show()
 
 
-
 if __name__ == '__main__':
     qApp = QApplication(sys.argv)
-    game = Game()
+    game = SnakeGame()
     sys.exit(qApp.exec())
 
