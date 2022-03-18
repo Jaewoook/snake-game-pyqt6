@@ -1,1 +1,1 @@
-from .GameOverError import GmaeOverError
+from .GameOverError import GameOverError

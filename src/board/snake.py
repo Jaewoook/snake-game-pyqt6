@@ -10,13 +10,14 @@ class Direction(Enum):
     BOTTOM = 3
 
 
-class Snake(QWidget):
+class SnakeHead(QWidget):
 
     direction = Direction.RIGHT
     length = 1
 
     def __init__(self):
         super().__init__()
+        self.setStyleSheet('background-color: rgb(0, 0, 255);')
 
     def reset(self):
         self.direction = Direction.RIGHT
@@ -29,3 +30,17 @@ class Snake(QWidget):
         if self.length == 1:
             raise GameOverError('Snake cannot be shrink anymore!')
         self.length -= 1
+
+
+class SnakeBody(QWidget):
+
+    def __init__(self):
+        super().__init__()
+        self.setStyleSheet('background-color: rgb(80, 80, 255);')
+
+
+class SnakeTail(QWidget):
+
+    def __init__(self):
+        super().__init__()
+        self.setStyleSheet('background-color: rgb(0, 150, 255);')

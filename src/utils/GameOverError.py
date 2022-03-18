@@ -1,4 +1,4 @@
-class GmaeOverError(Exception):
+class GameOverError(Exception):
 
     reason = 'Game Over error occurred! reason: '
 

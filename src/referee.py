@@ -1,4 +1,4 @@
-class Referee():
+class Referee:
 
     playing = False
     score = 0
