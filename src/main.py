@@ -1,6 +1,6 @@
 import sys
-from PyQt5 import QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout
+from game import Game
 
 
 class SnakeGame(QWidget):
@@ -8,6 +8,10 @@ class SnakeGame(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Snake Game')
+        self.game = Game()
+        self.layout = QVBoxLayout()
+        self.layout.addWidget(self.game)
+        self.setLayout(self.layout)
         self.show()
 
 

@@ -1,6 +1,6 @@
-# Snake Game PyQt5
+# Snake Game PyQt6
 
-Snake Game implemented using PyQt5
+Snake Game implemented using PyQt6
 
 ## Author
 

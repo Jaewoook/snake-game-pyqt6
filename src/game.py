@@ -1,9 +1,8 @@
 from PyQt6.QtWidgets import QWidget
 
 
-class Wall(QWidget):
-
-    color = '#000'
+class Game(QWidget):
 
     def __init__(self):
         super().__init__()
+        self.show()
